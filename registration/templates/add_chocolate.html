@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
 {% load register_extras %}
 {%  load staticfiles %}
 <html lang="en">
@@ -14,10 +21,10 @@
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
 <div class="panel panel-primary">
-<div class="panel-heading" ><b>Sign Up</b></div>
+<div class="panel-heading" ><b>Chocolate</b></div>
 <div class="panel-body">
         <form class="form-horizontal well" id="registerForm" method="POST"
-          					enctype="multipart/form-data" action="{% url 'user_signup' %}">
+          					enctype="multipart/form-data" action="">
           					<fieldset>
           							{% csrf_token %} {% load tz %}
           							{% for field in form.visible_fields %}
@@ -42,7 +49,7 @@
           						<div class="form-group" style="text-align:center">
           											 <a href="#tf-courses">
 														 <button type="submit" data-loading-text="Creating request..."
-																 class="btn btn-success solution_buttons">Create Request <i class="fa fa-angle-double-right"></i> </button></a>
+																 class="btn btn-success solution_buttons"> Add <i class="fa fa-angle-double-right"></i> </button></a>
           							 </div> <!-- form-group -->
           					 </fieldset>
           				 </form>
@@ -52,5 +59,7 @@
 </div>
 <div class="col-md-6"></div>
 </div>
+</body>
+</html>
 </body>
 </html>
